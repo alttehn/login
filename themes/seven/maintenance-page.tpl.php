@@ -22,7 +22,7 @@
 	    <?php print '111111111111'; ?>
 		     <?php print getenv("MYSQL_USER"); ?>	   <?php print '2'; ?>
       <?php print  getenv("MYSQL_PASSWORD"); ?>	   <?php print '2'; ?>
-      <?php print  getenv("MYSQL_SERVICE_HOST"); ?>	   <?php print '2'; ?>
+      <?php print  getenv("LOGIN_SERVICE_HOST"); ?>	   <?php print '2'; ?>
       <?php print  getenv("LOGIN_SERVICE_PORT"); ?>
 	   <?php print '2'; ?>
 	 <?php print  getenv("MYSQL_USER"); ?>
