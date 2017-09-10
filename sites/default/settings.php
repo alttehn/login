@@ -574,19 +574,3 @@ $conf['404_fast_html'] = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
 
 
 // When run from Drush, only $_ENV is available.  Might be a bug
-$databases = array (
-  'default' => 
-  array (
-    'default' => 
-    array (
-      'database' => 'login',
-      'username' => 'admin32167M',
-      'password' => 'Mik368zdE',
-      'host' => '172.30.86.31',
-      'port' => '3306',
-      'driver' => 'mysql',
-      'prefix' => '',
-    ),
-  ),
-  
-);
