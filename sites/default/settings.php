@@ -574,3 +574,24 @@ $conf['404_fast_html'] = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
 
 
 // When run from Drush, only $_ENV is available.  Might be a bug
+if (array_key_exists('OPENSHIFT_APP_NAME', $_SERVER)) {
+  $src = $_SERVER;
+} else {
+  $src = $_ENV;
+}
+$databases = array (
+  'default' => 
+  array (
+    'default' => 
+    array (
+      'database' => 'login',
+      'username' => $src['MYSQL_USER'],
+      'password' => $src['MYSQL_PASSWORD'],
+      'host' => $src['login_SERVICE_HOST'],
+      'port' => $src['login_SERVICE_PORT'],
+      'driver' => 'mysql',
+      'prefix' => '',
+    ),
+  ),
+  
+);
